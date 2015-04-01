@@ -1,13 +1,14 @@
 import praw
 import time
 from praw.errors import RateLimitExceeded
+from praw.objects import MoreComments
 from requests.exceptions import HTTPError
 from responses import responses
 
 queue = [[], [], []]
 seen = []
 
-r = praw.Reddit('User-Agent string goes here')
+r = praw.Reddit('Khaled 0.9.1 by JoelOtter')
 
 
 def process_queue():
@@ -35,7 +36,9 @@ def process_new():
     for sub in subr.get_hot(limit=100):
         if sub.permalink in seen:
             break
-        for c in sub.comments[:199]:
+        for c in sub.comments:
+            if isinstance(c, MoreComments):
+                continue
             text = c.body.lower()
             if "dj khaled" in text:
                 try:
