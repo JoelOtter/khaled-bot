@@ -15,5 +15,5 @@ Let we the best sound take control, baby - hold on, say my name?''',
 https://youtu.be/fxPBu_vX9Q0
 
 ---
-^_[Confused?](http://www.joelotter.com)_'''
+^_[Confused?](http://joelotter.com/2015/04/01/dj-khaled-reddit-bot.html)_'''
 ]

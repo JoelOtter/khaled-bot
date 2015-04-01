@@ -7,7 +7,7 @@ from responses import responses
 queue = [[], [], []]
 seen = []
 
-r = praw.Reddit('Khaled 0.0.1 by Joel Auterson')
+r = praw.Reddit('User-Agent string goes here')
 
 
 def process_queue():
